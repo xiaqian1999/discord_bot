@@ -1,7 +1,10 @@
+#For this level of bot, we want to work with random returns from the bot as user call the function
+
 import random
 from discord.ext.commands import Bot
 
-TOKEN = ''
+with open("./TOKEN", 'r') as f:
+    TOKEN = f.read().strip()
 
 BOT_PREFIX = ("?", "!")
 

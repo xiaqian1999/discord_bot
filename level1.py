@@ -1,6 +1,8 @@
+#For this level of bot, we want to work with basic return of one sentence with the given condition
 import discord
 
-TOKEN = ''
+with open("./TOKEN", 'r') as f:
+    TOKEN = f.read().strip()
 
 class MyClient(discord.Client):
     async def on_ready(self):
